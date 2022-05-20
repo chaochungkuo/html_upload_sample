@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>Upload data to IZKF Genomics Facility</title>
+  <link rel="stylesheet" type="text/css" href="progress_style.css">
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="jquery.form.js"></script>
+  <script type="text/javascript" src="upload_progress.js"></script>
+</head>
+<body>
+
+<h1>Upload data to Genomics Facility</h1>
+
+<p>Please compress your data before you upload. Only one compressed file is allowed to upload.</p>
+
+<form action="upload_file.php"id="myForm" name="formupload" method="post" enctype="multipart/form-data">
+  <input type="file" id="upload_file" name="upload_file" />
+  <input type="submit" name='submit_data' value="Submit" onclick='upload_data();'/>
+</form>
+<div class='progress' id="progress_div">
+<div class='bar' id='bar1'></div>
+<div class='percent' id='percent1'>0%</div>
+<!-- </div>
+<div id='output_image'> -->
+
+<p>After you upload the data successfully, please inform us via genomicsfacility@ukaachen.de</p>
+
+</body>
+</html>
