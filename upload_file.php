@@ -1,4 +1,4 @@
-if(isset($_POST['submit_data']))
+if(isset($_POST['upload_data']))
 {
   $uploadfile=$_FILES["upload_file"]["tmp_name"];
   $folder="data/";
